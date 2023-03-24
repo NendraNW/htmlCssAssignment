@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>བཤེས་སྤྲིང་།</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href=Nagarjuna.jpeg >
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+	{
+  margin-left: 8%;
+  font-size: 2vw;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+p,h1,h2{
+	font-size: 2vw;
+    font-family:'kingthings_linear_kregular';
+    color:#6369D1;
+}
+	  
+
+.sidenav {
+  height: 100%;
+  width: 8%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:#6369D1;
+  overflow-x: hidden;
+  padding-top: 1vw;
+  border-right: 1px #FFFFFF solid;
+}
+
+.sidenav a {
+  padding: 2px 3px 2px 7px;
+  text-decoration: none;
+  font-size: 1vwpx;
+  background-color:#6369D1;
+  color: #FFFFFF;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #FF785A;
+}
+
+.main {
+  margin-left: 8%; /* Same as the width of the sidenav */
+  font-size: 2vw; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+	{
+  font-size: 2vw;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+  font-size:2vw;
+  text-align:center;
+}
+
+h1{
+  font-size:2vw;
+  text-align:center;
+  font-weight:bold;
+}
+
+body {
+
+	 background-color:#ffffff;
+}
+
+hr{
+  color:white;
+  height:5px;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color:#FF785A;
+  margin-left:8%;
+	z-index: 1;
+	  }
+
+#navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 1vw 1vw;
+  text-decoration: none;
+  font-size: 1.5vw;
+}
+	  
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color:#6369D1;
+  color:white;
+}
+
+.content {
+  padding: 1vw;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 91%;
+}
+
+.sticky + .content {
+  padding-top: 3vw;
+}
+table {
+  table-layout: fixed ;
+  width: 92%;
+  text-align:center;
+}
+td {
+  width: 46%;
+}
+	  
+.btn {
+	font-size:1vw;
+	padding:1vw;
+	  }
+	  
+.footer {
+
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height:1.5vw;
+  background-color:#FF785A;
+  color:#FFFFFF;
+  text-align: center;
+  font-size:1.5vw;
+}
+
+audio {
+	z-index:0;
+	  }
+	 
+.card {
+	z-index:0;
+	  }
+a:hover {
+        background-color: yellow;
+    }
+
+.tooltip1 {
+border-bottom:white; color: #6369D1;
+position: relative;
+}
+.tooltip1 span {
+margin-left: -999em;
+position: absolute;
+}
+.tooltip1:hover span {
+border-radius: 5px 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); -webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.1); -moz-box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+position: absolute; left: 1em; top: 2em; z-index: 99;
+margin-left: 0; width: 250px;
+font-size: 15px;
+}
+.tooltip1:hover img {
+border: 0; margin: -15px 0 0 -150px;
+float: left; position: absolute;
+}
+.tooltip1:hover em {
+display: block; padding: 0.2em 0 0.6em 0;
+}
+.classic { padding: 0.8em 1em; }
+.custom1 { padding: 0.5em 0.8em 0.8em 2em; }
+* html a:hover { background: transparent; }
+.classic {background: #FFFFAA; border: 1px solid #FFAD33; }
+.critical { background: #FFCCAA; border: 1px solid #FF3334;	}
+.help1 { background: #9FDAEE; border: 1px solid #2BB0D7;	}
+.info { background: #9FDAEE; border: 1px solid #2BB0D7;	}
+.warning { background: #FFFFAA; border: 1px solid #FFAD33; }
+
+</style>
+</head>
+<body>
+
+<div class="container text-center" style="margin-bottom:0;color:white;background-color:#FFFFFF;">
+  <br><h1>བཤེས་སྤྲིང་།</h1><br>
+</div>
+
+<div id="navbar" style="font-size:1.5vw;">
+  <a class="active" href="index.html">བཤེས་སྤྲིང་།</a>
+  <a href="gyalsey.html">རྒྱལ་སྲས་ལག་ལེན།</a>
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+	<br>
+	
+<div class="sidenav" style="font-size:1vw">
+<p style="color:#FFFFFF;font-size:1vw;">Paragraphs</p>
+<table>
+<tr><td><a href="#CollapseE1">1</a></td>
+    <td><a href="#CollapseE2">2</a></td>
+    <td><a href="#CollapseE3">3</a></td></tr>
+</table>
+</div>
+	
+<table style="margin-left:8vw">
+	<tr><img src="Nagarjuna.jpeg" style="display:block;margin-left:auto;margin-right:auto;"></tr>
+	<tr><td><h1>Meaning of the title.</h1><br>
+  <p>In Sanskrit: Suhridhallekha In Tibetan: bshes pa’i spring yig In English: Letter to a Friend</p></td><td><h1>མཚན་དོན།</h1><br>
+  <p>རྒྱ་གར་སྐད་དུ། སུ་ཧྲི་ད་ལེ་ཁ། བོད་སྐད་དུ། བཤེས་པའི་སྤྲིང་ཡིག།</p><br> <audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+	<br>
+	<br>
+	<br>
+	
+	<tr><td><h1>Jurchha</h1><!-- Prayer -->
+  <p>Homage to the Gentle and Glorious Youth (Mañjushri).</p><br></td><td><h1>འགྱུར་ཕྱག་འཚལ་བ།</h1><br><!-- Prayer -->
+  <p>འཇམ་དཔལ་གཞོན་ནུར་གྱུར་པ་ལ་ཕྱག་འཚལ་ལོ།།</p><br> <audio controls>
+    <source src="stanza 2.m4a" type="audio/mpeg">
+  </audio> </td></tr>
+</table>
+</body>
+</html>
